@@ -1,6 +1,3 @@
-/* ==========================================================================
-   ESTILOS GENERALES Y RESET
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +13,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* ==========================================================================
-   ENCABEZADO (HEADER) CON DEGRADADO
-   ========================================================================== */
 .main-header {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #00c6ff 100%);
     color: #ffffff;
@@ -51,10 +44,6 @@ body {
     font-weight: 300;
     opacity: 0.95;
 }
-
-/* ==========================================================================
-   MENÚ DE NAVEGACIÓN CON ESTILOS Y TRANSICIONES CSS
-   ========================================================================== */
 .main-nav {
     background-color: #1a202c;
     border-bottom: 3px solid #00c6ff;
@@ -84,8 +73,6 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease-in-out;
 }
-
-/* Efectos al pasar el cursor (Hover) */
 .nav-btn:hover {
     background-color: #00c6ff;
     color: #0f172a;
@@ -99,10 +86,6 @@ body {
     color: #ffffff;
     border-color: #00c6ff;
 }
-
-/* ==========================================================================
-   ESTRUCTURA DE CONTENIDO E IFRAME
-   ========================================================================== */
 .content-wrapper {
     flex: 1;
     width: 100%;
@@ -119,8 +102,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
 }
-
-/* Estilos aplicados al cuerpo de las páginas dentro del Iframe */
 .iframe-body {
     padding: 25px;
     background-color: #ffffff;
@@ -144,10 +125,6 @@ body {
     color: #4a5568;
     margin-bottom: 25px;
 }
-
-/* ==========================================================================
-   SECCIÓN SOBRE MÍ
-   ========================================================================== */
 .profile-header {
     display: flex;
     flex-wrap: wrap;
@@ -231,9 +208,6 @@ body {
     margin-bottom: 6px;
 }
 
-/* ==========================================================================
-   SECCIÓN HOBBIES
-   ========================================================================== */
 .hobby-card {
     background: #ffffff;
     border-radius: 12px;
@@ -289,10 +263,6 @@ body {
     margin-top: 8px;
     font-style: italic;
 }
-
-/* ==========================================================================
-   SECCIÓN CIUDAD DE ORIGEN
-   ========================================================================== */
 .city-hero {
     margin-bottom: 25px;
     text-align: center;
@@ -354,10 +324,6 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(30, 60, 114, 0.4);
 }
-
-/* ==========================================================================
-   PIE DE PÁGINA (FOOTER) OBLIGATORIO CON DEGRADADO
-   ========================================================================== */
 .main-footer {
     background: linear-gradient(135deg, #0f172a 0%, #1e3c72 100%);
     color: #ffffff;
