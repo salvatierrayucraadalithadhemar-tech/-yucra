@@ -1,0 +1,374 @@
+/* ==========================================================================
+   ESTILOS GENERALES Y RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   ENCABEZADO (HEADER) CON DEGRADADO
+   ========================================================================== */
+.main-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #00c6ff 100%);
+    color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-phrase {
+    font-size: 1.05rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* ==========================================================================
+   MENÚ DE NAVEGACIÓN CON ESTILOS Y TRANSICIONES CSS
+   ========================================================================== */
+.main-nav {
+    background-color: #1a202c;
+    border-bottom: 3px solid #00c6ff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.nav-btn {
+    display: inline-block;
+    color: #edf2f7;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efectos al pasar el cursor (Hover) */
+.nav-btn:hover {
+    background-color: #00c6ff;
+    color: #0f172a;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 198, 255, 0.4);
+}
+
+.nav-btn.active {
+    background-color: #2a5298;
+    color: #ffffff;
+    border-color: #00c6ff;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE CONTENIDO E IFRAME
+   ========================================================================== */
+.content-wrapper {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+#frame-contenido {
+    width: 100%;
+    height: 750px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+/* Estilos aplicados al cuerpo de las páginas dentro del Iframe */
+.iframe-body {
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.section-card {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    border-left: 5px solid #00c6ff;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    font-size: 1.05rem;
+    color: #4a5568;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   SECCIÓN SOBRE MÍ
+   ========================================================================== */
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.profile-photo-wrapper {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2a5298;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-info h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.info-badge {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #2b6cb0;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.life-story {
+    margin-top: 20px;
+}
+
+.life-story h3 {
+    font-size: 1.4rem;
+    color: #2a5298;
+    margin-bottom: 15px;
+}
+
+.story-block {
+    background-color: #ffffff;
+    border: 1px solid #edf2f7;
+    border-left: 4px solid #2a5298;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.story-block h4 {
+    color: #2d3748;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.goals-list {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.goals-list li {
+    margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   SECCIÓN HOBBIES
+   ========================================================================== */
+.hobby-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hobby-name {
+    font-size: 1.35rem;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.hobby-description {
+    margin-bottom: 18px;
+    color: #4a5568;
+}
+
+.hobby-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 280px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #edf2f7;
+    text-align: center;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+}
+
+.img-caption {
+    display: block;
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   SECCIÓN CIUDAD DE ORIGEN
+   ========================================================================== */
+.city-hero {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.city-main-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.city-description {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.city-description h3 {
+    color: #1e3c72;
+    margin-bottom: 12px;
+}
+
+.city-description p {
+    margin-bottom: 12px;
+}
+
+.external-link-box {
+    background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #cbd5e0;
+}
+
+.external-link-box h4 {
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.ext-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 25px;
+    background-color: #2a5298;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ext-btn:hover {
+    background-color: #1e3c72;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 60, 114, 0.4);
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA (FOOTER) OBLIGATORIO CON DEGRADADO
+   ========================================================================== */
+.main-footer {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3c72 100%);
+    color: #ffffff;
+    padding: 18px 20px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 3px solid #00c6ff;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin: 3px 0;
+    opacity: 0.9;
+}
